@@ -30,6 +30,8 @@ fastpath.cpp: fastpath.re
 %.o: %.cpp
 	$(CXX) -c $(CPPFLAGS) -o $@ $<
 
+jay editor
+
 xhp_preprocess.o: xhp_preprocess.cpp scanner.lex.hpp parser.yacc.hpp
 parser.yacc.o: scanner.lex.hpp
 scanner.lex.o: parser.yacc.hpp
